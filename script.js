@@ -284,13 +284,13 @@ function generateMovie() {
 }
 
 
-function generateGame() {
+function generateGames() {
     const genres = Object.keys(bestGamesByGenre); // Получаем все ключи (жанры)
     const randomGenre = genres[Math.floor(Math.random() * genres.length)]; // Случайный жанр
     const games = bestGamesByGenre[randomGenre]; // Игры из выбранного жанра
     const randomGame = games[Math.floor(Math.random() * games.length)]; // Случайная игра из жанра
 
-    document.getElementById('randomgame').innerText = randomGame;
+    document.getElementById('randomgames').innerText = randomGame;
 }
 
 
